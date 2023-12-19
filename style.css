@@ -4,17 +4,22 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 .navbar{
-    background-color: white;
-    border-bottom: solid 2px #eee;
+    background-color: #f3f3f3;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     
 }
 
+
 .p-title{
     padding: 10px 0px 10px 0px;
+    margin-bottom: 0px;
     text-align: center;
     color:#fee36e;
-    font-size: 46px;
+    font-size: 66px;
     font-weight: 700;
+}
+.p-title span{
+    border-bottom: solid 6px #317ff5;
 }
 
 main{
@@ -24,14 +29,14 @@ main{
 
 
 .card{
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     border: 1px solid #482673;
     border-radius: 6px;
     margin: 6px;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .card-header{ 
@@ -72,4 +77,18 @@ main{
     font-size: 14px;
     margin-right: 20px;
     margin-left: 20px;
+}
+
+.page-footer{
+    text-align: right;
+    margin: 0;
+    background-color: #fee36e;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.footer-container{
+    color: #317ff5;
+    font-size: 12px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    padding-right: 20px;
 }
