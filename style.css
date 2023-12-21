@@ -5,14 +5,14 @@ body{
 }
 .navbar{
     background-color: #f3f3f3;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
     
 }
 
 
 .p-title{
-    padding: 10px 0px 10px 0px;
-    margin-bottom: 0px;
+    padding: 10px 0 10px 0;
+    margin-bottom: 0;
     text-align: center;
     color:#781366;
     font-size: 66px;
@@ -29,15 +29,13 @@ main{
 
 
 .card{
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     border: 1px solid #482673;
     border-radius: 6px;
-    margin: 6px;
+    margin: 6px auto 60px;
     max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 60px;
 }
+
 
 .card:hover{
     border-color: #704368;
@@ -47,7 +45,7 @@ main{
 .card-header{ 
     background-color: #F6EBF4;
     padding: 6px;
-    border-radius: 6px 6px 0px 0px;
+    border-radius: 6px 6px 0 0;
     border-bottom: 1px solid #482673;
 }
 
@@ -109,7 +107,7 @@ img{
     text-align: right;
     margin: 0;
     background-color: #c9c5c5;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
 }
 .footer-container{
     color: black;
