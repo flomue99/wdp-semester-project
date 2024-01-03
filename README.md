@@ -6,6 +6,12 @@
 - Thema der Presentation kurz vorstellen
 - Was ist JSX?
 
+
+
+JSX wurde 2011 von Facebook für die Verwendung von React entwickelt.
+JSX ist eine Syntaxerweiterung für JavaScript, die es Entwicklern ermöglicht, HTML-ähnlichen Code innerhalb von JavaScript-Dateien zu schreiben
+Es wird als sogenannter Syntax-Sugar bezeichnet.
+
 ### 2. Grundlagen von JSX
 - Grundlagen der Syntax
 - Vergleich zwischen JSX und JS anhand von Helloworld
@@ -30,8 +36,19 @@ element.textContent = 'Hello, World!';
 document.body.appendChild(element);
 ```
 
-## 3. Vorteile 
-- Wieso ist es besser als JS?
+## 3. Vorteile und Nachteile JSX
+
+**VT:**  
+
+-Lesbarkeit und Schreibweise
+-Integration von JS in HTML
+-Wiederverwendbarkeit von einzelnen Komponenten
+
+**NT:**
+
+- Mischung von HTML und Javascript, viele entwickler wollen JS und HTMl strikt trennen.
+- Notwendigkeit eines Build-Tolls wie Babel um JSX im JS zu übersetzten
+
 
 ## 4. JSX -> JS
 - wie sieht JSX als JS aus
