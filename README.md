@@ -67,6 +67,10 @@ document.body.appendChild(element);
 
 
 ## Referenzliste
+
+**Sehr WICHTIG!!**  
+- https://kinsta.com/de/wissensdatenbank/was-ist-jsx/
+
 - https://www.geeksforgeeks.org/what-are-the-advantages-of-using-jsx-in-reactjs/
 
 - https://react.dev/
