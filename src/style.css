@@ -6,7 +6,6 @@ body{
 .navbar{
     background-color: #f3f3f3;
     box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
-    
 }
 
 
@@ -19,7 +18,6 @@ body{
     font-weight: 700;
 }
 .p-title span{
-    border-bottom: solid 6px #317ff5;
 }
 
 main{
@@ -27,13 +25,18 @@ main{
     justify-content: center; /* Center the cards horizontally */
 }
 
+.card-container{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
 
 .card{
     box-shadow: rgba(50, 50, 93, 0.25) 0 2px 5px -1px, rgba(0, 0, 0, 0.3) 0 1px 3px -1px;
     border: 1px solid #482673;
     border-radius: 6px;
-    margin: 6px auto 60px;
-    max-width: 800px;
 }
 
 
@@ -67,6 +70,20 @@ main{
         margin-left:40px ;
 }
 
+.card-footer{
+    margin-top: 10px;
+    border-top: 1px solid #482673;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-page{
+    padding: 6px 10px 6px 0;
+}
+.footer-text{
+    padding: 6px 0 6px 10px;
+}
+
 .about-grid{
     display:grid;
     gap: 10px;
@@ -79,11 +96,13 @@ main{
 
 .card-list {
     list-style-type: none;
-
 }
 
+.card-list li {
+    margin-bottom: 8px;
+}
 
-img{
+.about-img{
     max-width: 150px;
     margin-left:45px ;
     border: 1px solid #482673;
@@ -106,6 +125,7 @@ img{
 .page-footer{
     text-align: right;
     margin: 0;
+    margin-top: 20px;
     background-color: #c9c5c5;
     box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
 }
@@ -117,4 +137,15 @@ img{
     padding-right: 20px;
 }
 
-
+.jsx-js{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+@media screen and (max-width: 1300px) {
+    .card-container{
+        grid-template-columns: 1fr;
+    }
+}
