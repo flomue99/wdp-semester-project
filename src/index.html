@@ -21,22 +21,24 @@
             <div class="card-header">
                 <h1 class="card-title">Projektteam</h1>
             </div>
-            <div class="card-body about-grid">
-                <div class="about-item">
-                    <ul class="card-list">
-                        <li>
-                            Jonas Mühleder
-                        </li>
-                    </ul>
-                    <img class="about-img" src="../doc/Jonas.JPG" alt="Image of Jonas">
-                </div>
-                <div class="about-item">
-                    <ul class="card-list">
-                        <li>
-                            Florian Mühleder
-                        </li>
-                    </ul>
-                    <img class="about-img" src="../doc/Jonas.JPG" alt="Image of Jonas">
+            <div class="card-body">
+                <div class="about-grid">
+                    <div class="about-item">
+                        <ul class="card-list">
+                            <li>
+                                Jonas Mühleder
+                            </li>
+                        </ul>
+                        <img class="about-img" src="../doc/Jonas.JPG" alt="Image of Jonas">
+                    </div>
+                    <div class="about-item">
+                        <ul class="card-list">
+                            <li>
+                                Florian Mühleder
+                            </li>
+                        </ul>
+                        <img class="about-img" src="../doc/Florian.jpeg" alt="Image of Jonas">
+                    </div>
                 </div>
             </div>
             <div class="card-footer">
@@ -61,9 +63,11 @@
                     </li>
                 </ul>
                 <p class="card-text">
-                    JSX steht für JavaScript XML und ist eine Syntaxerweiterung für JavaScript, welche es ermöglicht "HTML" Code
+                    JSX steht für JavaScript XML und ist eine Syntaxerweiterung für JavaScript, welche es ermöglicht
+                    "HTML" Code
                     innerhalb von JavaScript zu schreiben. Es wird als sogenannter Syntax-Sugar bezeichnet<br>
-                    JSX wurde von Meta (früher Facebook) entwickelt, um die Integration von HTML und JavaScript in React-Anwendungen zu erleichtern.
+                    JSX wurde von Meta (früher Facebook) entwickelt, um die Integration von HTML und JavaScript in
+                    React-Anwendungen zu erleichtern.
                 </p>
             </div>
             <div class="card-footer">
@@ -88,8 +92,11 @@
                     </li>
                 </ul>
                 <p class="card-text">
-                    Der Code wird vor der Ausführung im Browser von einem Transpiler, wie Babel, in JavaScript umgewandelt. Für die Umwandung wird ein Transpiler verwendet. Der beliebteste Transpiler für JSX ist Babel.<br>
-                    Babel transformiert JSX-Code in eine Reihe von Funktionsaufrufen, die den ursprünglichen HTML-ähnlichen Code entsprechen. Der Browser kann dann den resultierenden JavaScript-Code ausführen.
+                    Der Code wird vor der Ausführung im Browser von einem Transpiler, wie Babel, in JavaScript
+                    umgewandelt. Für die Umwandung wird ein Transpiler verwendet. Der beliebteste Transpiler für JSX ist
+                    Babel.<br>
+                    Babel transformiert JSX-Code in eine Reihe von Funktionsaufrufen, die den ursprünglichen
+                    HTML-ähnlichen Code entsprechen. Der Browser kann dann den resultierenden JavaScript-Code ausführen.
 
                 </p>
             </div>
@@ -100,32 +107,12 @@
         </div>
         <div class="card">
             <div class="card-header">
-                <h1 class="card-title"> JSX -> JS</h1>
-            </div>
-            <div class="card-body">
-                <div class="jsx-js">
-                    <h2>JSX</h2>
-                    <img src="../doc/4_1.png" alt="4_1" width="600px" height="100px">
-                    <h2>JS</h2>
-                    <img src="../doc/4_2.png" alt="4_2" width="600px" height="80px">
-                </div>
-                <p class="card-text">
-                   Durch diese Umwaldung wird es ermöglicht Komplexen Code in einer einfachen Syntax zu schreiben.
-                </p>
-            </div>
-            <div class="card-footer">
-                <span class="footer-text">JSX</span>
-                <span class="footer-page">4|10</span>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header">
                 <h1 class="card-title">Syntax</h1>
             </div>
             <div class="card-body">
                 <ul class="card-list">
                     <li>
-                       Es darf nur ein Wurzelelement existieren
+                        Es darf nur ein Wurzelelement existieren
                     </li>
                     <li>
                         ClassName statt Class verwenden
@@ -138,10 +125,27 @@
                     </li>
                 </ul>
                 <p class="card-text">
-                  In JSX darf es immer nur ein Wurzelelement geben, welches mit return zurückgegeben wird. Das bedeutet das der gesammte JSX Coder einer Komponente in einem einzigen äußeren Element platziert sein muss.<br>
-                    Um Nameskonflikte zu vermeiden, wird in JSX className anstatt class verwendet, da class ein reserviertes schlüsselwort in JavaScript ist.<br>
+                    In JSX darf es immer nur ein Wurzelelement geben, welches mit return zurückgegeben wird. Das
+                    bedeutet das der gesammte JSX Coder einer Komponente in einem einzigen äußeren Element platziert
+                    sein muss.<br>
+                    Um Nameskonflikte zu vermeiden, wird in JSX className anstatt class verwendet, da class ein
+                    reserviertes schlüsselwort in JavaScript ist.<br>
                     Innerhalb von geschweiften Klammern können beliebige JS Ausdrücke kombiniert werden.
                 </p>
+            </div>
+            <div class="card-footer">
+                <span class="footer-text">JSX</span>
+                <span class="footer-page">4|10</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h1 class="card-title">Wurzelelement</h1>
+            </div>
+            <div class="card-body">
+                <div class="image-container">
+                    <img class="img_root_element" src="../doc/root_element.png" alt="root element example">
+                </div>
             </div>
             <div class="card-footer">
                 <span class="footer-text">JSX</span>
@@ -150,22 +154,57 @@
         </div>
         <div class="card">
             <div class="card-header">
-                <h1 class="card-title">Syntax Beispiele</h1>
+                <h1 class="card-title">ClassName</h1>
             </div>
             <div class="card-body">
-                <ul class="card-list">
-                    <li>
-                        Root Element
-                    </li>
-                    <li>
-                        ClassName
-                    </li>
-                    <li>
-                        Ausdrücke
-                    </li>
-                </ul>
+                <div class="image-container">
+                    <img class="classname-image" src="../doc/className.png" alt="className example">
+                </div>
+            </div>
+            <div class="card-footer">
+                <span class="footer-text">JSX</span>
+                <span class="footer-page">6|10</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h1 class="card-title">Verwendung von JavaScript Ausdrücken</h1>
+            </div>
+            <div class="card-body">
+                <div class="image-container">
+                    <img class="image-js-operatios" src="../doc/js-operations.png" alt="js operation examples">
+                </div>
+            </div>
+            <div class="card-footer">
+                <span class="footer-text">JSX</span>
+                <span class="footer-page">6|10</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h1 class="card-title">Anzeigen von Daten einer Liste</h1>
+            </div>
+            <div class="card-body">
+                <div class="image-container">
+                    <img class="image-display-data" src="../doc/display_data.png" alt="example of display data">
+                </div>
+            </div>
+            <div class="card-footer">
+                <span class="footer-text">JSX</span>
+                <span class="footer-page">6|10</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h1 class="card-title">Umwandlung von JSX in JS</h1>
+            </div>
+            <div class="card-body">
+                <div class="jsx-js">
+                    <h2>JSX</h2>
+                    <h2>JS</h2>
+                </div>
                 <p class="card-text">
-
+                    Durch diese Umwaldung wird es ermöglicht Komplexen Code in einer einfachen Syntax zu schreiben.
                 </p>
             </div>
             <div class="card-footer">
@@ -175,24 +214,22 @@
         </div>
         <div class="card">
             <div class="card-header">
-                <h1 class="card-title">Beispiel mittels React</h1>
+                <h1 class="card-title">Beispiel anhand React</h1>
             </div>
             <div class="card-body">
                 <ul class="card-list">
                     <li>
-                        Kleine App um JSX zu zeigen
+                        Drei Komponenten (App, Container, Blogpost)
                     </li>
                     <li>
-                        3 Komponenten (App, Tabelle, Zeilen)
+                        Wiederverwendung von Komponenten
                     </li>
                     <li>
-                        Zeilen zu Tabelle hinzufügen
+                        Daten für Blogeintrag werden aus JS Datei gelesen
                     </li>
                 </ul>
                 <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptate vitae culpa ducimus
-                    consequatur tempora cumque voluptatem in dignissimos deserunt velit facilis reiciendis, fugiat iure
-                    explicabo excepturi modi ullam! Nulla?
+                    Anhand einer kleinen Reactanwendung soll gezeigt werden, wie einfach es ist einzelne Komponenten wiederzu verwenden. Zusätzlich möchten wir zeigen wie man auf Daten einer JavaScript Datei zugreifen kann und die Daten in einem HTML-Element darstellen kann.
                 </p>
             </div>
             <div class="card-footer">
@@ -232,10 +269,12 @@
                 <h1 class="card-title">Lessons Learned</h1>
             </div>
             <div class="card-body">
-                <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptate vitae culpa ducimus
-                    consequatur tempora cumque voluptatem in dignissimos deserunt velit facilis reiciendis, fugiat iure
-                    explicabo excepturi modi ullam! Nulla </p>
+                <ul class="card-list">
+                    <li>
+                        <a>Leichte bearbeitung des DOMS</a>
+                    </li>
+                </ul>
+                <p class="card-text"></p>
             </div>
             <div class="card-footer">
                 <span class="footer-text">JSX</span>
@@ -249,10 +288,19 @@
             <div class="card-body">
                 <ul class="card-list">
                     <li>
-                        <a href="https://legacy.reactjs.org/docs/jsx-in-depth.html">JSX in depth</a>
+                        <a href="https://legacy.reactjs.org/docs/jsx-in-depth.html" target="_blank">JSX in depth</a>
                     </li>
                     <li>
-                        <a href="https://babeljs.io/">Babel Compiler</a>
+                        <a href="https://babeljs.io/" target="_blank">Babel Compiler</a>
+                    </li>
+                    <li>
+                        <a href="https://kinsta.com/de/wissensdatenbank/was-ist-jsx/" target="_blank">JSX Leitfaden Blog </a>
+                    </li>
+                    <li>
+                        <a href="https://react.dev/" target="_blank">React Dokumentation</a>
+                    </li>
+                    <li>
+                        <a href="https://www.udemy.com/course/the-ultimate-react-course/" target="_blank">Udemy React Kurs</a>
                     </li>
                 </ul>
             </div>

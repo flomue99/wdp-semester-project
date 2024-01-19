@@ -88,3 +88,72 @@ document.body.appendChild(element);
 - https://babeljs.io/ (javascipt compiler für jsx)
 
 
+
+## code
+
+### Wurzelelement
+```jsx
+//erlaubt
+function Person() {
+    return (
+        <div>
+            <span>Lastname</span>
+            <span>Firstname</span>
+        </div>
+    );
+}
+
+//Nicht erlaubt, da es nur ein Wurzelelement geben darf
+function MyButton() {
+    return (
+        <span>Lastname</span>
+        <span>Firstname</span>
+    );
+}
+
+
+//Verwendung von className anstelle von class
+<div className="fancy-class">This element has a fancy CSS class.</div>
+
+//sollte vermieden werden -> class ist ein reserviertes Schlüsselwort in JS
+<div class="fancy-class">This element has a fancy CSS class.</div>
+
+
+
+<div>{customer.firstname}</div>
+
+<p>8 Byte = {8 * 8} bits</p>
+
+<h1>{x > 50 ? "Positive" : "Negative"}</h1>
+
+<div>
+    {isAuthenticated ? (
+        <button>Logout</button>
+    ) : (
+        <button>Login</button>
+    )}
+</div>
+
+
+
+const grades = [
+  { text: 'Very Good', number: 1 },
+  { text: 'Good', number: 2 },
+  { text: 'Satisfactory', number: 3 },
+  { text: 'Adequate', number: 4 },
+  { text: 'Unsatisfactory', number: 5 },
+];
+
+function AllGrades() {
+  return (
+    <ul>
+      {grades.map(grade => (
+        <li key={grade.number}>
+          {grade.text} is {grade.number} as number.
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+```
