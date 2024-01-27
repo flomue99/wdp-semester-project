@@ -1,26 +1,36 @@
 
+:root {
+    --bg-color: #DCEFFE;
+    --header-text-color: #ffffff;
+    --header-bg-cloor: #0466c8;
+    --card-header-text-color: #21295c;
+    --card-bg-color:#ffffff;
+    --card-divider-color: #e2eafc;
+}
 body {
+    background-color: var(--bg-color);
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
 
 .navbar {
-    background-color: #f3f3f3;
-    box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+    background-color: var(--header-bg-cloor);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .p-title {
     padding: 10px 0 10px 0;
     margin-bottom: 0;
     text-align: center;
-    color: #781366;
+    color: var(--header-text-color);
     font-size: 66px;
     font-weight: 700;
 }
 
 main {
     padding-top: 70px;
+    padding-bottom: 70px;
     justify-content: center; /* Center the cards horizontally */
 }
 
@@ -28,13 +38,13 @@ main {
     margin-left: 10%;
     margin-right: 10%;
     display: grid;
-    gap: 20px;
+    gap: 40px;
     grid-template-columns: 1fr 1fr;
 
     .card {
-        box-shadow: rgba(50, 50, 93, 0.25) 0 2px 5px -1px, rgba(0, 0, 0, 0.3) 0 1px 3px -1px;
-        border: 1px solid #482673;
-        border-radius: 6px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 14px;
+        background-color: var(--card-bg-color);
 
         .card-list {
             list-style-type: none;
@@ -44,17 +54,10 @@ main {
             margin-bottom: 8px;
         }
 
-
-        .card:hover {
-            border-color: #704368;
-            outline: 2px solid #704368;
-        }
-
         .card-header {
-            background-color: #F6EBF4;
             padding: 6px;
             border-radius: 6px 6px 0 0;
-            border-bottom: 1px solid #482673;
+            border-bottom: 2px solid var(--card-divider-color);
         }
 
         .card-title {
@@ -62,7 +65,7 @@ main {
             margin-bottom: 4px;
             font-size: 32px;
             font-weight: 700;
-            color: #482673;
+            color: var(--card-header-text-color);
             text-align: center;
         }
 
@@ -73,7 +76,7 @@ main {
         }
 
         .card-footer {
-            border-top: 1px solid #482673;
+            border-top: 2px solid var(--card-divider-color);
             display: flex;
             justify-content: space-between;
         }
@@ -94,6 +97,8 @@ main {
     }
 
 }
+
+
 .card-list li::before {
     content: '\25A0';
     color: #4cbfa6;
@@ -137,9 +142,7 @@ main {
 .footer-container {
     color: black;
     font-size: 12px;
-    padding-bottom: 6px;
-    padding-top: 6px;
-    padding-right: 20px;
+    padding: 6px 20px 6px 0;
 }
 
 .jsx-js {
