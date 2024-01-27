@@ -93,7 +93,6 @@ document.body.appendChild(element);
 
 ### Wurzelelement
 ```jsx
-//erlaubt
 function Person() {
     return (
         <div>
@@ -103,7 +102,8 @@ function Person() {
     );
 }
 
-//Nicht erlaubt, da es nur ein Wurzelelement geben darf
+//Nicht erlaubt,
+//da es nur ein Wurzelelement geben darf
 function MyButton() {
     return (
         <span>Lastname</span>
@@ -113,10 +113,15 @@ function MyButton() {
 
 
 //Verwendung von className anstelle von class
-<div className="fancy-class">This element has a fancy CSS class.</div>
+<div className="fancy-class">
+    This element has a fancy CSS class.
+</div>
 
-//sollte vermieden werden -> class ist ein reserviertes Schlüsselwort in JS
-<div class="fancy-class">This element has a fancy CSS class.</div>
+//sollte vermieden werden
+//da class ein reserviertes Schlüsselwort in JS
+<div class="fancy-class">
+    This element has a fancy CSS class.
+</div>
 
 
 
@@ -144,6 +149,8 @@ const grades = [
   { text: 'Unsatisfactory', number: 5 },
 ];
 
+//Usage of map() to transform a
+//array into a list of list items
 function AllGrades() {
   return (
     <ul>
@@ -154,6 +161,27 @@ function AllGrades() {
       ))}
     </ul>
   );
+}
+
+//Component with propertiesconst posts = [
+const post = 
+    {
+        title: 'React',
+        key: 1,
+        author: 'florian.muehleder@gmail.com',
+        text: 'React ist eine JavaScript-Programmbibliothek zur Erstellung von webbasierten Benutzeroberflächen. Komponenten werden in React hierarchisch aufgebaut und können in dessen Syntax als selbst definierte JSX-Tags repräsentiert werden.'
+    };
+
+function BlogPost({post}) {
+    return (
+        <li className="blog-post">
+            <div className="blog-post-content">
+                <h2 className="blog-title">{post.title}</h2>
+                <p className="blog-text">{post.text}</p>
+                <p className="blog-author">Written by {post.author}</p>
+            </div>
+        </li>
+    );
 }
 
 ```
